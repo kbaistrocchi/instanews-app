@@ -61,3 +61,22 @@ footer {
 
 
 }
+
+@media only screen and (min-width: 1240px) {
+
+    header {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        width: 23%;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    footer p {
+        padding-left: 30px;
+    }
+}
