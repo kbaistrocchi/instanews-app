@@ -3,6 +3,8 @@ body {
     color: #fff;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -10,16 +12,17 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    width: 100%;
+    width: 60%;
     margin-bottom: 6%;
     text-align: center;
 }
 
 img {
-    width: 60%;
+    width: 100%;
 }
 
 .choose {
@@ -39,17 +42,22 @@ select {
 footer {
     width: 100%;
     text-align: center;
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
     margin-bottom: 12px;
 }
 
 
 @media only screen and (min-width: 600px) {
 
-    /* initial screen
+    /* initial screen */
     header {
-        display: flex;
-    } */
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        width: 27%;
+    }
+
 
 }
