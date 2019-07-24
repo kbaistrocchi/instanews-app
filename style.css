@@ -6,8 +6,15 @@ body {
 }
 
 header {
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
     width: 100%;
-    margin: 43% auto 6% auto;
+    margin-bottom: 6%;
     text-align: center;
 }
 
@@ -35,4 +42,14 @@ footer {
     position: absolute;
     bottom: 0;
     margin-bottom: 12px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    /* initial screen
+    header {
+        display: flex;
+    } */
+
 }
