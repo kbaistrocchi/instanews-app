@@ -2,14 +2,37 @@ body {
     background-color: #000;
     color: #fff;
     width: 100%;
+    height: 100%;
 }
 
 header {
     width: 100%;
-    margin: 33% auto 0 auto;
+    margin: 43% auto 6% auto;
     text-align: center;
 }
 
 img {
-    width: 57%;
+    width: 60%;
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    padding-bottom: 10px;
+}
+
+select {
+    background-color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 12px;
 }
