@@ -53,12 +53,8 @@ table {
 }
 
 body {
-  background: green;
-}
-
-body {
   background-color: #000;
-  color: #fff;
+  color: #ffffff;
   width: 100%;
   height: 100%;
   display: flex;
@@ -72,11 +68,32 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  header {
+    justify-content: flex-start;
+  }
+}
 
 .logo {
   width: 60%;
   margin-bottom: 6%;
   text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .logo {
+    margin-bottom: 0;
+    width: 27%;
+  }
+}
+@media only screen and (min-width: 1240px) {
+  .logo {
+    width: 23%;
+  }
 }
 
 img {
@@ -103,31 +120,12 @@ footer {
   align-self: flex-end;
   margin-bottom: 12px;
 }
-
-@media only screen and (min-width: 600px) {
-  /* initial screen */
-  header {
-    flex-direction: row;
-  }
-
-  .logo {
-    margin-bottom: 0;
-    width: 27%;
-  }
-}
 @media only screen and (min-width: 1240px) {
-  header {
-    justify-content: flex-start;
-  }
-
-  .logo {
-    width: 23%;
-  }
-
   footer {
     text-align: left;
   }
-
+}
+@media only screen and (min-width: 1240px) {
   footer p {
     padding-left: 30px;
   }

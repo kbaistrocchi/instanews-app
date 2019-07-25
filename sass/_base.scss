@@ -47,10 +47,21 @@ table {
 	border-spacing: 0;
 }
 
-// add comments to seperate and organize code, ex: variables
+// VARIABLES
 
+$font-size: 16px;
+$font-color: #ffffff;
 
+// MIXINS
 
-body {
-    background: green;
+@mixin tablet {
+    @media only screen and (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1240px) {
+        @content;
+    }
 }
