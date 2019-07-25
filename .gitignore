@@ -13,9 +13,8 @@ ehthumbs.db
 node_modules/
 # Ignore PerfTool #
 # =============== #
-gulpfile.js
-package.json
 perf-tool/
+yarn.lock
 # Ignore Folders #
 # =============== #
 /assets
