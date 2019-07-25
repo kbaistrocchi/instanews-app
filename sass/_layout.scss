@@ -5,8 +5,8 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    // font-size: $font-size;
-    
+    font-size: $font-size;
+    font-family: $nyt-font;   
 }
 
 header {
@@ -69,37 +69,3 @@ footer {
     }
 }
 
-
-// @media only screen and (min-width: 600px) {
-
-//     /* initial screen */
-//     // header {
-//     //     flex-direction: row;
-//     // }
-
-//     // .logo {
-//     //     margin-bottom: 0;
-//     //     width: 27%;
-//     // }
-
-
-// }
-
-// @media only screen and (min-width: 1240px) {
-
-//     // header {
-//     //     justify-content: flex-start;
-//     // }
-
-//     // .logo {
-//     //     width: 23%;
-//     // }
-
-//     footer {
-//         text-align: left;
-//     }
-
-//     footer p {
-//         padding-left: 30px;
-//     }
-// }
