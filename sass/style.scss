@@ -1,3 +1,9 @@
-body {
-    background: green;
-}
+// normally have no code in the main .scss
+
+// used to import other scss files
+// order is important!
+
+@import 'base';
+@import 'components';
+@import 'layout';
+
