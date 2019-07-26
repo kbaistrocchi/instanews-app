@@ -8,13 +8,23 @@ $('select').on('change', () => {
     $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?&max-results=5&api-key=hbvVpmOEMRq8xxJSav79k8nlLeNRfUGg`)
     .done(function(data) {
         console.log('data', data)
+        // check results for images
         $.each(data.results, function(key, value) {
-            console.log(value.multimedia)
-            console.log(value.multimedia[0].format)
-            let imageArray = value.multimedia.filter(object => {
-                return object.format === 'thumbLarge'
-            })
-            console.log(imageArray)
+            // console.log("value.multi", value.multimedia)
+            // console.log(value.multimedia[0].format)
+            // let imageArray = value.multimedia.filter(object => {
+            //     return object.format === 'thumbLarge'
+            // })
+        
+            
+            if (value.multimedia.length >= 1) {
+                console.log('value', value)
+            }
+
+
+            // console.log(imageArray)
+            // filter out only stories with images
+            // if (imageArray.length >= 1) {}
         })
         // for (let i=0; i < 12; i++) {
         //     // article variables
