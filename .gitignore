@@ -8,6 +8,7 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+yarn.lock
 # Ignore packages #
 # =============== #
 node_modules/
@@ -18,7 +19,6 @@ perf-tool/
 # =============== #
 /assets
 Collapse
-yarn.lock
 
 
 
