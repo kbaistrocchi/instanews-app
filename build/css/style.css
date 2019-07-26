@@ -119,6 +119,8 @@ header {
   width: 60%;
   margin-bottom: 6%;
   text-align: center; }
+  .logo img {
+    width: 100%; }
   @media only screen and (min-width: 600px) {
     .logo {
       margin-bottom: 0;
@@ -126,9 +128,6 @@ header {
   @media only screen and (min-width: 1240px) {
     .logo {
       width: 23%; } }
-
-img {
-  width: 100%; }
 
 .choose {
   display: -webkit-box;
@@ -154,6 +153,17 @@ main {
   grid-auto-rows: 400px;
   grid-auto-columns: 1fr; }
 
+.top-story {
+  display: grid;
+  grid-template: 75% 25% / 1fr;
+  max-width: 100%;
+  overflow: hidden; }
+  .top-story img {
+    grid-area: 1 / 1 / span 2 / span 1;
+    max-height: 100%; }
+  .top-story .text {
+    grid-area: 2 / 1 / 3 / 2; }
+
 footer {
   width: 100%;
   text-align: center;
@@ -167,3 +177,10 @@ footer {
   @media only screen and (min-width: 1240px) {
     footer p {
       padding-left: 30px; } }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.text {
+  background-color: rgba(0, 0, 0, 0.75); }

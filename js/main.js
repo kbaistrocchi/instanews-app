@@ -15,17 +15,21 @@ $('select').on('change', () => {
                 filteredData.push(value)
             }
         })
-        // console.log(filteredData)
+        console.log(filteredData)
         // only display the first 12 results
         for (let i=0; i < 12; i++) {
             // article variables
             let title = filteredData[i].title
             let abstract = filteredData[i].abstract
-            let url = filteredData[i].multimedia[2].url
+            let image = filteredData[i].multimedia[4].url
+            let url = filteredData[i].url
 
             // append each result to a div with photo
-            // wrap entire div in link to url
-            $('main').append(`<div><h2>${title}</h2><p>${abstract}</p></div>`)
+            // wrap entire div in link to url 
+
+            // put title and abstract in another UN-NESTED div and overlay it using grid. Hopefully this will 
+            // fix the text overflow issue
+        $('main').append(`<div class="top-story"><img src="${image}"><div class="text"><a href="${url}"><h2>${title}</h2></a><p>${abstract}</p></div></div>`)
 
             }
 
