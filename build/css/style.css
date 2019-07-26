@@ -148,6 +148,12 @@ label {
 select {
   background-color: white; }
 
+main {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: 400px;
+  grid-auto-columns: 1fr; }
+
 footer {
   width: 100%;
   text-align: center;
