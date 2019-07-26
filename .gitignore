@@ -8,7 +8,7 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-yarn.lock
+*.lock
 # Ignore packages #
 # =============== #
 node_modules/
