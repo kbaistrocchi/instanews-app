@@ -9,10 +9,13 @@ $('select').on('change', () => {
     .done(function(data) {
         console.log('data', data)
         $.each(data.results, function(key, value) {
-            // console.log("value in data", value)
-            console.log(value.title)
+            console.log("value in data", value)
+            let $title = value.title
+            let $abstract = value.abstract
+            let $image;
+            console.log($abstract)
             // append each result to a div with photo
-            $('main').append(`<div><h2>${value.title}</h2></div>`)
+            $('main').append(`<div><h2>${$title}</h2><p>${$abstract}</p></div>`)
 
             })
     })

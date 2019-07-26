@@ -14,7 +14,6 @@ node_modules/
 # Ignore PerfTool #
 # =============== #
 perf-tool/
-yarn.lock
 # Ignore Folders #
 # =============== #
 /assets
