@@ -8,10 +8,11 @@
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
-*.lock
+
 # Ignore packages #
 # =============== #
 node_modules/
+yarn.lock
 # Ignore PerfTool #
 # =============== #
 perf-tool/
@@ -19,7 +20,3 @@ perf-tool/
 # =============== #
 /assets
 Collapse
-
-
-
-Message input
