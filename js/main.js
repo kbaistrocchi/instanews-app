@@ -29,8 +29,12 @@ $('select').on('change', () => {
         })
     }
     else {
-        $('header').css('height', '200px')
-        $('.logo').css('width', '10%')
+        $('header').css('height', '135px')
+        $('.logo').css({
+            'width': '70px',
+            'padding-left': '3%',
+            'padding-right': '7%'
+        })
     }
 
 

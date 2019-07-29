@@ -42,7 +42,7 @@ header {
 .choose {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 label {
@@ -64,6 +64,10 @@ main {
         grid-auto-rows: 300px;
         grid-template-columns: 1fr 1fr 1fr;
     };
+    @include desktop {
+        grid-auto-rows: 450px;
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .top-story {
@@ -98,7 +102,7 @@ img {
     }
 }
 
-
+// FOOTER
 
 footer {
     align-self: flex-end;
@@ -110,12 +114,12 @@ footer {
     margin-bottom: 25px;
     color: #c2c2c2;
     @include desktop {
-        text-align: left;
+        justify-content: flex-start;
     }
-    p {
-        @include desktop {
-            padding-left: 30px;
-        }
+    // p {
+    //     @include desktop {
+    //         padding-left: 30px;
+    //     }
     }
 }
 
