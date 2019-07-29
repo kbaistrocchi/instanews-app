@@ -29,7 +29,7 @@ $('select').on('change', () => {
 
             // put title and abstract in another UN-NESTED div and overlay it using grid. Hopefully this will 
             // fix the text overflow issue
-        $('main').append(`<div class="top-story"><img src="${image}"><div class="text"><a href="${url}"><h2>${title}</h2></a><p>${abstract}</p></div></div>`)
+        $('main').append(`<div class="top-story"><div class="img-wrapper"><img src="${image}"></div><div class="text"><a href="${url}"><h2>${title}</h2></a><p>${abstract}</p></div></div>`)
 
             }
 
