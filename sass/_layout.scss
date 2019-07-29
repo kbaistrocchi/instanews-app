@@ -76,7 +76,7 @@ main {
 .img-wrapper {
     grid-area: 1 / 1 / span 2 / span 1;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     @include tablet {
