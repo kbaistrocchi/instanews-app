@@ -53,13 +53,17 @@ select {
     background-color: white;
 }
 
-// MAIN News Stories
+// MAIN - News Stories
 
 main {
     width: 100%;
     display: grid;
     grid-auto-rows: 450px;
     grid-auto-columns: 1fr;
+    @include tablet {
+        grid-auto-rows: 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+    };
 }
 
 .top-story {
@@ -72,10 +76,13 @@ main {
 .img-wrapper {
     grid-area: 1 / 1 / span 2 / span 1;
     max-height: 100%;
-    max-width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
-};
+    @include tablet {
+        max-width: calc(100vw/3);
+    };
+}
 
 img {
     height: 100%;
@@ -84,6 +91,11 @@ img {
 .text {
     grid-area: 2 / 1 / 3 / 2;
     padding: 10px;
+    p {
+        @include tablet {
+            display: none;
+        };
+    }
 }
 
 
