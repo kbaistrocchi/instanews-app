@@ -1,10 +1,11 @@
 $(function() {
 
-    // dropdown menu selection
+   
 $('select').on('change', () => {
-    // save menu selection
+
     let $selection = $('select').val()
-    // empty main div and format header
+    
+    // empty Main and format header
     $('main').empty()
 
     let $browserWidth = $(window).width()

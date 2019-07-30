@@ -71,15 +71,17 @@ main {
 }
 
 .top-story {
-    display: grid;
-    grid-template: 75% 25% / 1fr;
+    display: flex;
+    flex-direction: column;
+    // grid-template: 75% 25% / 1fr;
     max-width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .img-wrapper {
-    grid-area: 1 / 1 / span 2 / span 1;
-    max-height: 100%;
+    // grid-area: 1 / 1 / span 2 / span 1;
+    height: 100%;
     max-width: 100vw;
     display: flex;
     justify-content: center;
@@ -96,7 +98,12 @@ img {
 }
 
 .text {
-    grid-area: 2 / 1 / 3 / 2;
+    // grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
     padding: 10px;
     p {
         @include tablet {
