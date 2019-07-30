@@ -239,3 +239,5 @@ a {
 
 .text {
   background-color: rgba(0, 0, 0, 0.75); }
+  .text a:hover {
+    color: #c2c2c2; }

@@ -5,4 +5,10 @@ a {
 
 .text {
     background-color: rgba(0, 0, 0, 0.75);
+    a {
+        &:hover {
+            color: #c2c2c2;
+        }
+        
+    }
 }
