@@ -102,7 +102,9 @@ header {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
   @media only screen and (min-width: 600px) {
     header {
       -webkit-box-orient: horizontal;
@@ -143,9 +145,6 @@ header {
 
 label {
   padding-bottom: 10px; }
-
-select {
-  background-color: white; }
 
 main {
   width: 100%;
@@ -232,6 +231,15 @@ footer {
   @media only screen and (min-width: 1240px) {
     footer p {
       padding-left: 30px; } }
+
+select {
+  background-color: white;
+  font-size: 1rem; }
+
+.loading-gif {
+  display: none;
+  height: 100px;
+  text-align: center; }
 
 a {
   color: white;

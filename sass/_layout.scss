@@ -15,6 +15,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all 0.4s ease;
     @include tablet {
         flex-direction: row;
     }
@@ -49,9 +50,6 @@ label {
     padding-bottom: 10px;
 }
 
-select {
-    background-color: white;
-}
 
 // MAIN - News Stories
 

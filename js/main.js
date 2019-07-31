@@ -5,8 +5,9 @@ $('select').on('change', () => {
 
     let $selection = $('select').val()
     
-    // empty Main and format header
+    // empty Main and display loading gif and format header
     $('main').empty()
+    $('.loading-gif').show()
 
     let $browserWidth = $(window).width()
     if ($browserWidth < 600) {
@@ -41,6 +42,7 @@ $('select').on('change', () => {
 
     $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?&max-results=5&api-key=hbvVpmOEMRq8xxJSav79k8nlLeNRfUGg`)
     .done(function(data) {
+        $('.loading-gif').hide()
         console.log('data', data)
         
         // filter results for only those with images
