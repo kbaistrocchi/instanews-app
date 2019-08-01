@@ -1,6 +1,10 @@
 $(function() {
     
 // jQuery Select Plugin
+$('select').prettyDropdown({
+    height: 30,
+    // selectedMarker: null,
+  });
 
    
 $('select').on('change', () => {
