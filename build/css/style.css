@@ -203,9 +203,8 @@ img {
   position: absolute;
   bottom: 0;
   padding: 10px; }
-  @media only screen and (min-width: 600px) {
-    .text p {
-      display: none; } }
+  .text p {
+    display: none; }
 
 footer {
   -ms-flex-item-align: end;

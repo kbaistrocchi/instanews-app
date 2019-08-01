@@ -1,4 +1,6 @@
 $(function() {
+    
+// jQuery Select Plugin
 
    
 $('select').on('change', () => {
@@ -61,13 +63,25 @@ $('select').on('change', () => {
             let image = filteredData[i].multimedia[4].url
             let url = filteredData[i].url
 
-            $('main').append(`<div class="top-story"><div class="img-wrapper"><img src="${image}"></div><div class="text"><a href="${url}"><h2>${title}</h2></a><p>${abstract}</p></div></div>`)
+            $('main').append(`<div class="top-story"><div class="img-wrapper"><img src="${image}"></div><div class="text"><h2><a href="${url}">${title}</a></h2><p>${abstract}</p></div></div>`)
 
         }
 
     })
     .fail(function() {})
     .always(function(){})
+
+    // display abstract on hover
+    $(document).on('mouseenter', '.top-story', (e) => {
+        console.log(e)
+        $(e.currentTarget).children(':nth-child(2n)').children(':nth-child(2n)').slideDown()
+    })
+    .on('mouseleave', '.top-story', (e) => {
+        $(e.currentTarget).children(':nth-child(2n)').children(':nth-child(2n)').slideUp()
+    })
+    
+
+
 })
 
 
