@@ -199,7 +199,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   position: absolute;
   bottom: 0;
   padding: 10px; }
@@ -230,6 +230,9 @@ footer {
   @media only screen and (min-width: 1240px) {
     footer p {
       padding-left: 30px; } }
+
+h2 {
+  font-family: 'Open Sans Bold'; }
 
 select {
   background-color: white;
