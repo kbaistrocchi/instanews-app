@@ -3,7 +3,6 @@ $(function() {
 // jQuery Select Plugin
 $('select').prettyDropdown({
     height: 30,
-    // selectedMarker: none,
   });
 
    
@@ -11,7 +10,7 @@ $('select').on('change', () => {
 
     let $selection = $('select').val()
     
-    // empty Main and display loading gif and format header
+    // empty 'Main' container, display loading gif, format header
     $('main').empty()
     $('.loading-gif').show()
 
@@ -49,7 +48,6 @@ $('select').on('change', () => {
     $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?&max-results=5&api-key=hbvVpmOEMRq8xxJSav79k8nlLeNRfUGg`)
     .done(function(data) {
         $('.loading-gif').hide()
-        console.log('data', data)
         
         // filter results for only those with images
         let filteredData = []
@@ -58,7 +56,6 @@ $('select').on('change', () => {
                 filteredData.push(value)
             }
         })
-        console.log(filteredData)
 
         // only display the first 12 results
         for (let i=0; i < 12; i++) {
@@ -72,24 +69,20 @@ $('select').on('change', () => {
         }
 
     })
-    .fail(function() {})
-    .always(function(){})
+    .fail(function() {
+        alert('There was a problem with your request. Please refresh the page and try again.')
+    })
 
     // display abstract on hover
     $(document).on('mouseenter', '.top-story', (e) => {
-        console.log(e)
         $(e.currentTarget).children(':nth-child(2n)').children(':nth-child(2n)').slideDown()
     })
     .on('mouseleave', '.top-story', (e) => {
         $(e.currentTarget).children(':nth-child(2n)').children(':nth-child(2n)').slideUp()
     })
-    
 
 
 })
-
-
-
 
 
 });
