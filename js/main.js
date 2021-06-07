@@ -45,7 +45,7 @@ $('select').on('change', () => {
     }
 
 
-    $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?&max-results=5&api-key=hbvVpmOEMRq8xxJSav79k8nlLeNRfUGg`)
+    $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$selection}.json?&api-key=hbvVpmOEMRq8xxJSav79k8nlLeNRfUGg`)
     .done(function(data) {
         $('.loading-gif').hide()
         
