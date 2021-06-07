@@ -41,6 +41,15 @@ gulp.task('sass', function() {
     
 })
 
+gulp.task('minify-pretty-dropdown', function() {
+    return gulp
+    .src('./css/prettydropdowns.css')
+    .pipe(cssnano())
+    .pipe(rename('prettydropdowns.min.css'))
+    .pipe(gulp.dest('./build/css'))
+    .pipe(browserSync.stream())
+})
+
 
 // minify js and outputs to build directory
 gulp.task('scripts', function() {
@@ -70,6 +79,7 @@ gulp.task('default', function() {
     gulp.watch('js/*.js', gulp.series(['scripts', 'eslint']) ).on('change', browserSync.reload)
     // run sass above if changed occur in sass files
     gulp.watch('./sass/*.scss', gulp.series('sass')).on('change', browserSync.reload)
+    gulp.watch('./css/prettydropdowns.css', gulp.series('minify-pretty-dropdown')).on('change', browserSync.reload)
     gulp.watch('./*.html').on('change', browserSync.reload)
 
      
