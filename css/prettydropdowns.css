@@ -10,12 +10,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #000;
+  background: #fff;
   border: 1px solid #a9a9a9;
   box-sizing: content-box;
-  color: #fff;
+  color: #000;
   cursor: pointer;
-  font: normal 18px 'Roboto', sans-serif;
+  font: normal 18px Calibri, sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@
 .prettydropdown:not(.disabled) > ul.active {
   width: auto;
   max-height: none !important;
-  border-color: darkgray;
+  border-color: #1e90ff;
   overflow-x: hidden;
   overflow-y: auto;
   z-index: 99;
@@ -72,7 +72,7 @@
   display: block;
 }
 .prettydropdown > ul.active > li:not(.label):hover, .prettydropdown > ul.active > li.hover:not(.label), .prettydropdown > ul.active > li:first-child:hover:after {
-  background: darkgray;
+  background: #1e90ff;
   color: #fff;
 }
 .prettydropdown > ul.active > li.nohover {
